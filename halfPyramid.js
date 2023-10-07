@@ -27,12 +27,14 @@ function halfpayramid(length) {
 //12
 //1
 
-// Time Complexity Big O(n^2)
-function halfPayramidWithNumber(length) {
-    for (let i = 0; i <= length; i++) {
-        let num = '';
-        for (let j = 1; j <= length - i; j++) {num += j}
-        console.log(num)  
+// Time Complexity Big O(n)
+function halfPayramidWithNumber(length){
+    let cur  = 1;
+    let line = Array.from({length : length} , (v,i) => i + 1).join('')
+
+    for (let i = length - 1; i >= 1; i--) {
+        console.log(line)
+        line = line.slice(0 , -1)
     }
 }
 
