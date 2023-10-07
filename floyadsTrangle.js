@@ -23,6 +23,7 @@ function floydsTrangle(length) {
 
 // Time Complexity Reduce to BigO(n)
 function floydstrangleON(length) {
+    console.log('============Floyds Triangle Pattern print==============');
     let currentNumber = 1;
     let row = '';
 

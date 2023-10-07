@@ -1,5 +1,5 @@
 /**
- * Print this Reachtengle with the help of loop function will recived 2 args cols & rows as Number
+ * Print this RECTANGLE with the help of loop function will recived 2 args cols & rows as Number
  * @param {Number} cols 
  * @param {Number} rows 
  * @return void
@@ -30,6 +30,7 @@ function reactanglePrint(cols,rows){
  // Space Complexity O(n)
  function OofNreactanglePattern(cols, rows) {
      let firstLastRows = '*'.repeat(cols)
+     console.log('============RECTANGLE Pattern print==============');
      for (let i = 0; i <= rows; i++) {
          if(i == 0 || i == rows) console.log(firstLastRows)
          else console.log('*' + ' '.repeat(cols - 2) + '*')
